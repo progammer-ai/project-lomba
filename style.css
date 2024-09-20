@@ -33,3 +33,105 @@ body {
     height: 45px;
     border-radius: 0 0.375rem 0.375rem 0;
   }
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .chat-window {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+  
+  .bot-message {
+    background-color: #e9ecef;
+    color: #000;
+    text-align: left;
+  }
+  
+  .user-message {
+    background-color: #0d6efd;
+    color: #fff;
+    text-align: right;
+  }
+  
+  #userInput {
+    height: 45px;
+    border-radius: 0 0.375rem 0.375rem 0;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Pastikan body mengisi seluruh tinggi layar */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Mengatur arah kolom */
+    min-height: 100vh; /* Memastikan container mengisi seluruh tinggi viewport */
+}
+
+header {
+    background-color: #98d8d5;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    flex: 1; /* Membuat main mengambil ruang yang tersisa */
+    padding: 20px;
+}
+
+.card {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #98d8d5; /* Warna latar belakang footer */
+    text-align: center; /* Pusatkan teks */
+    padding: 10px; /* Padding untuk footer */
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 24px; /* Ukuran font lebih kecil di layar kecil */
+    }
+
+    .card h2 {
+        font-size: 18px; /* Ukuran font judul kartu lebih kecil */
+    }
+}

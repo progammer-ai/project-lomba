@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.svg-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20px; /* Jarak dari atas */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Pastikan teks berada di atas SVG */
+    text-align: center;
+    color: white;
+    background-color: rgba(34, 151, 153, 0.7); /* Semi-transparan */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+svg {
+    display: block;
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.rows, .row-1, .row-2, .row-3, .row-4, .row-5, .row-6 {
+    background-color: #F5F5F5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h3 {
+    color: rgb(34, 151, 153);
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+}
